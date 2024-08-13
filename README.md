@@ -16,52 +16,26 @@ In this section, we present several types of meteorological data used in M4Fog, 
 
 **The data-processing of geostationary satellites data**
 
-[Format Arrangement: HDF—>NPY]] In the M4Fog dataset, most of the stationary meteorological satellite data can be obtained from the Level 1 (L1) data of their imagers, such as the FY4A/4B and GOES series. However, the Meteo satellite data is sourced from the original Level 1.5 data. After processes such as reading, projection, and format conversion, we can acquire a three-dimensional array (C, H, W). Additionally, we provide synthesis functions for generating true or natural-color images for all kinds of satellites.
+In the M4Fog dataset, most of the stationary meteorological satellite data can be obtained from the Level 1 (L1) data of their imagers, such as the FY4A/4B and GOES series. However, the Meteo satellite data is sourced from the original Level 1.5 data. After processes such as reading, projection, and format conversion, we can acquire a three-dimensional array (C, H, W). Additionally, we provide synthesis functions for generating true or natural-color images for all kinds of satellites. [Refer to ‘Data_process/Satellites/’]
 
------
+**The data-processing of numerical analysis data**
 
-![arch](https://github.com/kaka0910/M4Fog/blob/main/Imgs/Abb-subdataset.jpg)
+Building on the multi-channel stationary meteorological satellite data, we further supplemented the dataset with land-sea masks and sea surface temperature (SST) numerical analysis data. Currently, the publicly available sea surface temperature data is daily, which means that for different times on the same day, the same SST file is provided. We also performed raw data reading, processing, and format conversion on the sea temperature data, ultimately resulting in a two-dimensional array (H, W). Additionally, we offer visualization methods for the sea temperature and other related data. [Refer to ‘Data_process/Numerical/’]
 
-The sub-dataset for M4Fog is hosted in the upper links with the following directory structure (taking H8/9 in YB Area as an example):
+**The data-processing of observation databases data**
 
-```
-.
-|-- M4Fog-H8/9-YB
-|   |-- train
-|       |-- npy
-|           |-- 20180115_0000.npy
-|           |-- ...
-|           |-- 20200805_0800.npy
-|       |-- sst
-|           |-- sst_20180115.npy
-|           |-- ...
-|           |-- sst_20200805.npy
-|       |-- label
-|           |-- conn_20180115_0000_300_sp.png
-|           |-- ...
-|           |-- conn_20200805_0800_300_sp.png
-|       |-- icoads.txt
-|   `-- val
-|       |-- npy
-|           |-- 20210110_0000.npy
-|           |-- ...
-|           |-- 20200810_0800.npy
-|       |-- sst
-|           |-- sst_20210110.npy
-|           |-- ...
-|           |-- sst_20200810.npy
-|       |-- label
-|           |-- conn_20210110_300_sp.png
-|           |-- ...
-|           |-- conn_20200810_300_sp.png
-|       |-- icoads.txt
-`--
-```
+Observation data is primarily obtained from offshore buoys, vessels, ocean observation platforms, and coastal observation stations, recording weather phenomena and related meteorological variables such as temperature, humidity, visibility, and weather codes. The original observational data formats are typically .000/.dat or compressed files. We filter the observational records corresponding to the image data based on time and geographic coordinates to create a new text file. It is important to note that for data that do not directly record fog-related meteorological conditions, secondary assessments will be conducted using meteorological principles. [Refer to ‘Data_process/Observations/’]
 
-You can choose the corresponding M4Fog subdataset according to the required region and satellite to train and test.
+
+### Track-A Sub-dataset
 
 - H8/9-YB Sub-dataset : [Baidu Netdisk]() (password: ), [Google Drive]()
 - FY4A-YB Sub-dataset : [Baidu Netdisk]() (password: ), [Google Drive]()
+
+## M4Fog benchmarks
+
+### Track-A benchmark
+
 
 ## Citation
 
