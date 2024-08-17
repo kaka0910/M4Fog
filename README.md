@@ -80,7 +80,7 @@ We construct several sub-datasets using M4Fog data cubes, with each satellite ha
 
 We also provide additional processed data related to marine fog monitoring and forecasting as part of the M4Fog construction. This includes, for example, nearly a decade's worth of ICOADS data used to analyze areas where marine fog occurs.
 
-- ICOADS data spanning 2015-2024
+- ICOADS data spanning 2015-2024 (Uploading,expected to be completed by 0818)
   - almost 9.5 million records spanning 2015-2024, which clearly observe or infer the presence or absence of marine fog globally.
   - [Baidu Netdisk](https://pan.baidu.com/s/1_8hTqhCS5ZyrkCqvTrT7KQ?pwd=yfat) (password: yfat)
 
