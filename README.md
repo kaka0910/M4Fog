@@ -50,7 +50,7 @@ We have released multiple sub-datasets in Track-A, which are divided based on re
 
 Building on Track A, we constructed a time series dataset with a length of N+1 and dimensions of ((N+1),C,H,W) to enable dynamic marine fog monitoring. Additionally, we provided the corresponding satellite dataset's Motion data, derived using visible bands and optical flow algorithms.
 
-- Himawari-8/9 data in Yellow and Bohai Sea: (Uploading,expected to be completed in 0818)
+- Himawari-8/9 data in Yellow and Bohai Sea:
   - 1,696 data cubes ((N+1)xCxHxW = (1+1)x(16+1+1)x1024x1024), including Himawari 8/9, SST, Constant Dense Data and motion data. 
   - [Baidu Netdisk](https://pan.baidu.com/s/1q0s9eqAlydmyX6lu0znd3w?pwd=8q75) (password: 8q75)
 
@@ -80,9 +80,13 @@ We construct several sub-datasets using M4Fog data cubes, with each satellite ha
 
 We also provide additional processed data related to marine fog monitoring and forecasting as part of the M4Fog construction. This includes, for example, nearly a decade's worth of ICOADS data used to analyze areas where marine fog occurs.
 
-- ICOADS data spanning 2015-2024 (Uploading,expected to be completed in 0818)
+- ICOADS data spanning 2015-2024 :
   - almost 9.5 million records spanning 2015-2024, which clearly observe or infer the presence or absence of marine fog globally.
   - [Baidu Netdisk](https://pan.baidu.com/s/1_8hTqhCS5ZyrkCqvTrT7KQ?pwd=yfat) (password: yfat)
+- Marine weather reviews (in Chinese) 2017-2022: 
+  - [Baidu Netdisk](https://pan.baidu.com/s/1QE5QicyA1tFalcguP_fY_Q?pwd=amwc) (password: amwc)
+-  SaeMAE 03/04/14 bands images :
+  - [Baidu Netdisk](https://pan.baidu.com/s/1zKpGfhruSNLInJB4Bc8HhQ?pwd=1n5v) (password: 1n5v)
 
 ## M4Fog benchmarks
 
