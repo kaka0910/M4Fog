@@ -66,7 +66,6 @@ We construct several sub-datasets using M4Fog data cubes, with each satellite ha
 - Fengyun-4A data:
   - The length of data cube sequence is 8, T = T' = 4. The total number of multi-areas: 3,931.
   - 3,931 data cubes (CxHxW = 3x256x256), visible bands (0.47μm, 0.65μm) + Near-Infrared band (0.825μm).
-  - [Baidu Netdisk](https://pan.baidu.com/s/1S4oQAw1klyFedaKl1gR7mA?pwd=ugsr) (password: ugsr)
 - Meteo-multiareas data:
   - The length of data cube sequence is 8, T = T' = 4. The total number of multi-areas: 2,832.
   - 2,832 data cubes (CxHxW = 3x256x256), natural-color images.
